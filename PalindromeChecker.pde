@@ -33,7 +33,7 @@ public String reverse(String str)
     //your code here
     for(int i = sWord.length()-1;i>=0;i--)
       {
-        sNew=sNew+sWord.charAt(i);
+        sNew=sNew+sWord.substring(i,i+1);
       }
     return sNew;
 }
