@@ -39,15 +39,15 @@ public String reverse(String str)
 }
 public String textOnly(String str)
 {
-  String sWords=new String();
+  String textWord=new String();
   for(int i=0;i<str.length();i++)
     {
-      if(str.toLowerCase().charAt(i) != ' ' && Character.isLetter(str.charAt(i))==true)
+      if(Character.isLetter(str.charAt(i))==true)
         {
-            sWords=sWords+str.toLowerCase().charAt(i);
+            textWord=textWord+str.toLowerCase().substring(i,i+1);
         }
     }
-  return sWords;
+  return textWord;
 }
 
 
